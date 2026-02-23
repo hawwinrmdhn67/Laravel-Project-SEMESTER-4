@@ -10,10 +10,10 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
-// fitur baru halaman about
+// fitur baru halaman about yang menampilkan teks "Halaman About"
 Route::get('/about', function () {
     return Inertia::render('Halaman About');
-})->name('about');
+})->name('about'); 
 
 Route::get('dashboard', function () {
     return Inertia::render('dashboard');

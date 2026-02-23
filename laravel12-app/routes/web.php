@@ -10,11 +10,6 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
-// fitur baru halaman about
-Route::get('/about', function () {
-    return Inertia::render('Halaman About');
-})->name('about');
-
 Route::get('dashboard', function () {
     return Inertia::render('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

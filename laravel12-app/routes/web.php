@@ -12,7 +12,7 @@ Route::get('/', function () {
 
 // fitur baru halaman about 
 Route::get('/about', function () {
-    return Inertia::render('Halaman About');
+    return Inertia::render('about');
 })->name('about'); 
 
 Route::get('dashboard', function () {
